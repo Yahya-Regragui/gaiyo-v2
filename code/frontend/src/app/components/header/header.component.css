@@ -80,9 +80,7 @@ a {
     .links{
         display: none;
     }
-    .side-menu{
-        display: block;
-    }
+    
 }
 @media only screen and (max-width: 640px) {
     #menu-user{

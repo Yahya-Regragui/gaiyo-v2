@@ -4,6 +4,7 @@
 
 .sidenav {
   width: 350px;
+  background-color: #fff;
 }
 
 .sidenav .mat-toolbar {
@@ -18,14 +19,100 @@
 .hidden{
   display: none;
 }
-
-mat-toolbar button {
+.main-toolbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px rgba(128, 128, 128, 0.445) solid;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.links{
+  width: 1000px;
+  
+}
+.links ul {
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-around;
+}
+#sale{
+  color: white;
+  background-color: #D72323;
+  border-radius: 3px;
+  letter-spacing: 1.5px;
+  padding: 5px;
+}
+#menu-user{
+  background-image: url("../../assets/icons/user.svg");
+  margin-left:20px;
+  
+}
+#menu-search{
+  
+  background-image: url("../../assets/icons/search.svg");
+  margin-left:20px;
+}
+#menu-cart{
+  background-image: url("../../assets/icons/cart.svg");
+  margin-left:20px;
+  
+}
+.menu-icons{
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.menu{
+  position: absolute;
+  top: 35px;
+  right: 50px;
+  
+  display: flex;
+  justify-content: space-around;
+}
+.drawer{
+  position: absolute;
+  top: 35px;
+  left: 40px;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
   display: none;
 }
+.close-nav{
+  margin-top: 30px;
+}
 
-@media only screen and (max-width: 600px) {
-  mat-toolbar button {
+@media only screen and (max-width: 1140px) {
+  .links{
+      display: none;
+  }
+  .drawer {
     display: block;
   }
+}
+@media only screen and (max-width: 640px) {
+  #menu-user{
+      display: none;
+  }
+  .menu{
+      right: 15px;
+  }
+  .logo{
+      width: 100px;
+  }
+  
   
 }
